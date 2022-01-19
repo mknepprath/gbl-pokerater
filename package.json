@@ -1,7 +1,7 @@
 {
   "name": "poke-rater",
   "version": "1.0.0",
-  "description": "",
+  "description": "Calculate the best counters to the current meta in Go Battle League.",
   "main": "index.js",
   "scripts": {
     "start": "node --loader ts-node/esm ./index.ts",
@@ -14,5 +14,16 @@
     "colors": "^1.4.0",
     "node-fetch": "^3.1.0",
     "ts-node": "^10.4.0"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mknepprath/gbl-pokerater.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mknepprath/gbl-pokerater/issues"
+  },
+  "homepage": "https://github.com/mknepprath/gbl-pokerater#readme"
 }
