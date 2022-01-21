@@ -4,7 +4,10 @@ import fetch from "node-fetch";
 
 import teams, { fetchUrl } from "./great-league.js";
 
-const byRating = process.argv.includes("--rating");
+const byRating =
+  process.argv.includes("--rating") || process.argv.includes("-r");
+const countersOnly =
+  process.argv.includes("--counters") || process.argv.includes("-c");
 
 const teamPosition = ["Lead", "Swap", "Closer"];
 
@@ -18,6 +21,10 @@ const teamPosition = ["Lead", "Swap", "Closer"];
  *   opponent: string,
  *   rating: number
  *  }[],
+ * matchups: {
+ *   opponent: string,
+ *   rating: number
+ *  }[],
  * }>}
  */
 const getPvPokeData = async () => {
@@ -28,6 +35,8 @@ const getPvPokeData = async () => {
 
 const pvPokeData = await getPvPokeData();
 
+const ratings = [{}, {}, {}];
+
 const allCounters = teams.map((team) =>
   team.map((pokemon) => {
     const counters = pvPokeData.find(
@@ -37,8 +46,6 @@ const allCounters = teams.map((team) =>
     return counters;
   })
 );
-
-const ratings = [{}, {}, {}];
 
 allCounters.forEach((teamCounters) => {
   teamCounters.forEach((pokemonCounters, teamIndex) => {
@@ -52,6 +59,31 @@ allCounters.forEach((teamCounters) => {
     });
   });
 });
+
+if (!countersOnly) {
+  const allMatchups = teams.map((team) =>
+    team.map((pokemon) => {
+      const matchups = pvPokeData.find(
+        (p) => p.speciesName === pokemon
+      )?.matchups;
+      if (!matchups) console.error(pokemon);
+      return matchups;
+    })
+  );
+
+  allMatchups.forEach((teamMatchups) => {
+    teamMatchups.forEach((pokemonMatchups, teamIndex) => {
+      pokemonMatchups.forEach((counter, index) => {
+        if (!ratings[teamIndex][counter.opponent]) {
+          ratings[teamIndex][counter.opponent] = 0;
+        }
+        ratings[teamIndex][counter.opponent] = byRating
+          ? ratings[teamIndex][counter.opponent] + counter.rating - 1000
+          : ratings[teamIndex][counter.opponent] + index - 5;
+      });
+    });
+  });
+}
 
 // Convert ratings keyed object to array
 const ratingsArray = ratings.map((r) =>
