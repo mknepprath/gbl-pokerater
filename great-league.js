@@ -326,29 +326,77 @@ export const sets = [
   //   ["Stunfisk (Galarian)", "Venusaur", "Pelipper"],
   //   ["Umbreon", "Nidoqueen", "Azumarill"],
   // ],
+  // [
+  //   // Jan 20th - Set 1
+  //   ["Swampert (Shadow)", "Skarmory", "Azumarill"],
+  //   ["Stunfisk", "Skarmory", "Medicham"],
+  //   ["Hypno (Shadow)", "Medicham"],
+  //   ["Jellicent", "Scrafty", "Talonflame"],
+  //   ["Altaria", "Azumarill", "Stunfisk (Galarian)"],
+  // ],
+  // [
+  //   // Jan 20th - Set 2
+  //   ["Azumarill", "Skarmory", "Obstagoon"],
+  //   ["Jellicent", "Galvantula", "Scrafty"],
+  //   ["Talonflame", "Trevenant", "Sableye"],
+  //   ["Swampert", "Azumarill", "Hypno"],
+  //   ["Altaria", "Venusaur", "Scrafty"],
+  // ],
+  // [
+  //   // Jan 20th - Set 3
+  //   ["Granbull (Shadow)", "Medicham", "Politoed"],
+  //   ["Talonflame", "Politoed", "Wigglytuff"],
+  //   ["Medicham", "Talonflame", "Bastiodon"],
+  //   ["Obstagoon", "Nidoqueen (Shadow)", "Skarmory"],
+  //   ["Bastiodon", "Toxicroak", "Mandibuzz"],
+  // ],
+  // [
+  //   // Jan 21st - Set 1
+  //   ["Sableye", "Nidoqueen", "Stunfisk (Galarian)"],
+  //   ["Stunfisk (Galarian)", "Medicham", "Ninetales (Alolan)"],
+  //   ["Vigoroth", "Drapion", "Walrein"],
+  //   ["Talonflame", "Azumarill", "Swampert"],
+  //   ["Swampert", "Pelipper", "Skarmory"],
+  // ],
+  // [
+  //   // Jan 21st - Set 2
+  //   ["Sableye", "Qwilfish", "Wigglytuff"],
+  //   ["Swampert", "Galvantula", "Stunfisk (Galarian)"],
+  //   ["Scrafty", "Nidoqueen (Shadow)", "Skarmory"],
+  //   ["Marowak (Alolan)", "Altaria", "Ferrothorn"],
+  //   ["Azumarill", "Victreebel (Shadow)", "Wigglytuff"],
+  // ],
+  // [
+  //   // Jan 21st - Set 3
+  //   ["Stunfisk (Galarian)", "Azumarill", "Talonflame"],
+  //   ["Sableye", "Medicham", "Walrein"],
+  //   ["Venusaur", "Stunfisk (Galarian)", "Bastiodon"],
+  //   ["Azumarill", "Wormadam (Trash)", "Hypno (Shadow)"],
+  //   ["Jellicent", "Nidoqueen (Shadow)", "Mawile (Shadow)"],
+  // ],
   [
-    // Jan 20th - Set 1
-    ["Swampert (Shadow)", "Skarmory", "Azumarill"],
+    // Jan 22nd - Set 1
+    ["Swampert (Shadow)", "Azumarill", "Walrein"],
+    ["Stunfisk (Galarian)", "Abomasnow (Shadow)", "Venusaur"],
+    ["Umbreon", "Swampert", "Nidoqueen"],
+    ["Bastiodon", "Victreebel (Shadow)", "Whiscash"],
+    ["Pelipper", "Greedent", "Machamp (Shadow)"],
+  ],
+  [
+    // Jan 22nd - Set 2
+    ["Electrode", "Chesnaught", "Quagsire"],
     ["Stunfisk", "Skarmory", "Medicham"],
-    ["Hypno (Shadow)", "Medicham"],
-    ["Jellicent", "Scrafty", "Talonflame"],
-    ["Altaria", "Azumarill", "Stunfisk (Galarian)"],
+    ["Trevenant", "Azumarill", "Stunfisk (Galarian)"],
+    ["Stunfisk (Galarian)", "Talonflame", "Azumarill"],
+    ["Azumarill", "Hypno", "Talonflame"],
   ],
   [
-    // Jan 20th - Set 2
-    ["Azumarill", "Skarmory", "Obstagoon"],
-    ["Jellicent", "Galvantula", "Scrafty"],
-    ["Talonflame", "Trevenant", "Sableye"],
-    ["Swampert", "Azumarill", "Hypno"],
-    ["Altaria", "Venusaur", "Scrafty"],
-  ],
-  [
-    // Jan 20th - Set 3
-    ["Granbull (Shadow)", "Medicham", "Politoed"],
-    ["Talonflame", "Politoed", "Wigglytuff"],
-    ["Medicham", "Talonflame", "Bastiodon"],
-    ["Obstagoon", "Nidoqueen (Shadow)", "Skarmory"],
-    ["Bastiodon", "Toxicroak", "Mandibuzz"],
+    // Jan 22nd - Set 3
+    ["Bastiodon", "Medicham", "Altaria"],
+    ["Sableye", "Nidoqueen", "Medicham"],
+    ["Talonflame", "Azumarill", "Stunfisk (Galarian)"],
+    ["Scrafty", "Jellicent", "Cofagrigus"],
+    ["Stunfisk (Galarian)", "Medicham", "Pelipper"],
   ],
 ];
 
