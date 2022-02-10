@@ -2,7 +2,7 @@ import "colors";
 
 import fetch from "node-fetch";
 
-import teams, { fetchUrl } from "./great-league.js";
+import teams, { fetchUrl } from "./love.js";
 
 const byRating =
   process.argv.includes("--rating") || process.argv.includes("-r");
